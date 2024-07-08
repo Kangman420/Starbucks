@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        img 
+        { 
+            display: block;
+            border: none; 
+        }
+        #top
+        {
+            width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .top_left
+        {
+            width: 750px;
+            height: 500px;
+        }
+        .top_right
+        {   
+            width: 250px;
+            height: 500px;
+            margin-top: -500px;
+            float:right;
+        }
+        .top_right img
+        {
+            display: block;
+        }
+        #top_box
+        {
+            padding-right: 40px;
+            padding-bottom: 40px;
+            width: 210px;
+            height: 210px;
+            margin-top: -250px;
+            background-color: green;
+            background-color: rgba(15, 120, 22, 0.638);
+            position: absolute;
+        }
+        a
+        {
+            margin-left: 15px;
+            font-weight: bold;
+            font-size:x-large;
+        }
+    
+
+        #box_all
+        {
+            width: 1000px;
+            overflow: hidden;
+            margin: 0px auto;
+            
+        }
+        .box_left
+        {
+            display: flex;
+            width: 750px;
+            height: 500px;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+        .box_right
+        {
+            background-color: rgb(225, 255, 0);
+            width: 210px;
+            height: 460px;
+            padding-bottom: 40px;
+            padding-right: 40px;
+            margin-top: -500px;
+            float: right;
+        }
+        .box
+        {
+            
+            width: 210px;
+            padding-right: 40px;
+            height: 210px;  
+            padding-bottom: 40px;
+            margin: 0;
+        }
+        .box:nth-child(2n) { background-color: rgb(255, 123, 0)}
+        .box:nth-child(2n+1){ background-color: rgba(42, 14, 1, 0.741);}
+        .box h1
+         {
+            margin-top: 0px;
+            margin-left: 15px;
+            font-size:medium;
+        }
+        #footer
+        {
+            width: 1000px;
+            overflow: hidden;
+            margin: 0px auto;
+            background-color: pink;
+        }
+        .f_left
+        {
+            width: 750px;
+            height: 40px;
+            background-color: rgba(42, 14, 1, 0.634);
+        }
+        .f_right
+        {
+            float: right;
+            width: 250px;
+            height: 40px;
+            margin-top: -40px;
+            background-color: rgba(235, 103, 198, 0.744);
+        }
+        .f_left a
+        {
+            text-decoration-line: none; 
+            font-size: x-small;
+            padding: 0px;
+            margin-left: 30px;
+        }
+        .f_left a:nth-child(2n){color: orange;}
+        .f_left a:nth-child(2n+1){color: black;}
+        .f_left h2
+        {
+            text-decoration-line: none; 
+            font-size: x-small;
+            color: black;
+            padding: 0px;
+            margin-left: 30px;
+        }
+        h1
+        {
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size:medium;
+        }
+        #temp 
+        {
+            width: 100%;
+            height: 100px;
+        }   
+        li{float:left;list-style: none;margin-top: 7.5px;padding: 0px}
+    </style>
+
+    <body>
+        <div id="top">
+            <div class="top_left">
+                <img src="">
+            </div>
+            <div class="top_right">
+                <img src="../img/right1.png">
+                <img src="../img/right2.png">
+            </div>
+            <div id="top_box">
+                <br>
+                <a>Global</a><br>
+                <a>BUSINESS</a>
+                <br>
+                <h1>sadl;sadl;sadsad;lasfl;asfl;sal
+                sa;flaskfsalfkaflaslfksakfsafk
+                asfplsafsla;fka;lfl;ksfl;kafla
+                s;ladksa;lfsa;flsaf;asl;fa;alkf
+            </h1>
+            </div>
+            
+        </div>
+        <div id="box_all">
+            <div class="box_left">
+                <div class="box">
+                    <br>
+                    <a>TITLE</a>
+                    <h1>sadl;asdksal;fsalsdsadsadak<br>askdlsajdlkadsjlk</h1>
+                </div>
+                <div class="box">
+                    <br>
+                    <a>TITLE</a>
+                    <h1>sadl;asdksal;fsalsdsadsadak<br>askdlsajdlkadsjlk</h1>
+                </div>
+                <div class="box">
+                    <br>
+                    <h1>3</h1>
+                </div>
+                <div class="box">
+                    <br>
+                    <h1>4</h1>
+                </div>
+                <div class="box">
+                    <br>
+                    <h1>5</h1>
+                </div>
+                <div class="box">
+                    <br>
+                    <h1>6</h1>
+                </div>
+            </div>
+            <div class="box_right">
+                <h1>7</h1>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="f_left">
+                <li>
+                    <a href="#">법적고지</a><a>|</a>
+                    <a href="#">이메일무단수집거부</a><a>|</a>
+                    <a href="#">이용약관</a><a>|</a>
+                    <a href="#">개인정보취급방침</a><a>|</a>
+                    <a href="#">고객센터</a><a>|</a>
+                    <a href="#">입찰공고</a> 
+                </li>
+            </div>
+            <div class="f_right">
+            </div>
+        </div>
+        <div id="temp"></div>
+    </body>
+</html>
+
