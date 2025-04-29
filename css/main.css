@@ -363,21 +363,22 @@ header .cards .card
   font-size: 24px;
   margin-top: 25px;
 }
-.notice .swiper-slide {
+.notice .swiper-slide 
+{
   position: relative;
   transform: scale(0.95);
   transition: transform 0.3s ease;
 }
-/* 기본적으로 반투명 흰색 커버을 추가 */
+/* 반투명 흰색 커버 추가 */
 .notice .swiper-slide::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.6); /* 얇은 흰색 막 */
+  background: rgba(255, 255, 255, 0.6);
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-/* 가운데 슬라이드는 확대 + 커버버 제거 */
+/* 가운데 슬라이드는 확대 + 커버 제거 */
 .notice .swiper-slide-active {
   transform: scale(1);
   z-index: 2;
@@ -740,7 +741,7 @@ header .cards .card
 }
 
 
-/*수상*/
+/*수상 스와이퍼*/
 .awards {
   background-color: #272727;
 }
@@ -748,72 +749,68 @@ header .cards .card
 {
   padding: 40px 0;
 }
-.awards .process 
+.awards .swiper-container 
 {
-  position:relative;
-  height: 40px;
-  width: 1110px;
+  margin-top: -39px;
   overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 1110px;
+  align-items: center;
+  justify-content: center;
+
 }
-.awards .slide 
+.awards .swiper-wrapper 
 {
-  left: -225px;
-  margin: auto;
-  display: flex;
-  width: 230px; /* 슬라이드 컨테이너의 너비 */
-  height: 40px; /* 슬라이드 컨테이너의 높이 */
-  user-select: none;
+  left: 50%;
   position: relative;
-}
-.awards .slide_item 
-{
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  width: 100%; /* 슬라이드 항목의 너비 */
-  height: 100%; /* 슬라이드 항목의 높이 */
-  transition: left 0.5s;
   display: flex;
+  gap: 0px;
+
+}
+.awards .swiper-slide 
+{   
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* 슬라이드 항목이 축소되지 않도록 설정 */
+  width: 192px;
+  height: 40px;
+  font-size: 24px;
 }
 .awards .slide_items 
 {
   display: flex;
   position: relative;
 }
+.awards .swiper-button-custom
+{
+  margin-top: -302px;
+  color: gray;
+  border: 2px solid gray;
+  background-color: 272727;
+}
+.awards .swiper-button-custom-prev
+{
+  left: 0;
+}
+.awards .swiper-button-custom-next
+{
+  right: 0;
+}
+.awards .swiper-button-custom:hover
+{
+  
+  background-color: gray;
+  color: #272727;
+}
 .awards img 
 {
+  /* border: 1px solid red; */
   height: 40px;
   width: 192px;
-}
-.slide_prev_button2,
-.slide_next_button2
-{
-  z-index: 10px;
-  top: -5px;
-  opacity: .3;
-  transition: 0.3s;
-  position: absolute;
-  background-color: #fff;
-  color: #333;
-}
-.slide_prev_button2:hover,
-.slide_next_button2:hover
-{
-  opacity: 0.7;
-  background-color: #333;
-  color: #fff;
-}
-.slide_prev_button2
-{
-  left: -75px;
-  margin-top: -10px;
-}
-.slide_next_button2
-{
-  right: -75px;
-  margin-top: -10px;
 }
 
 

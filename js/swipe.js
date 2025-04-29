@@ -2,6 +2,7 @@ document.querySelectorAll('.swiper-container').forEach((container, i) => {
   const slideCount = container.querySelectorAll('.swiper-slide').length;
 
   new Swiper(container, {
+    wrapperClass: 'swiper-wrapper',
     loop: true,
     loopedSlides: slideCount,
     slidesPerView: 'auto',
