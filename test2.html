@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--Gsap & ScrollTrigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+  
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #222;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    .swiper-container {
+      overflow: hidden;
+      width: 100%;
+      height: 550px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .swiper-wrapper {
+      align-items: center;
+    }
+
+    .swiper-slide {
+      width: 1000px; /* 슬라이드 크기를 직접 제어 */
+      height: 500px;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .swiper-button-custom {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .swiper-button-custom-prev {
+      left: 500px;
+    }
+
+    .swiper-button-custom-next {
+      right: 500px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .custom-bullet {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .custom-bullet.active {
+      background-color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+    </div>
+
+    <div class="swiper-button-custom swiper-button-custom-prev">◀</div>
+    <div class="swiper-button-custom swiper-button-custom-next">▶</div>
+
+    <div class="swiper-pagination">
+      <div class="custom-bullet" data-slide="0"></div>
+      <div class="custom-bullet" data-slide="1"></div>
+      <div class="custom-bullet" data-slide="2"></div>
+      <div class="custom-bullet" data-slide="3"></div>
+      <div class="custom-bullet" data-slide="4"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/swipe.js"></script>
+</body>
+</html>
